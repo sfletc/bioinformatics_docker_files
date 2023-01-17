@@ -8,7 +8,7 @@
 
 ### transcript_quant_go_mouse
 - Jupyter notebook environment with Python and R kernels
-- trim_galore, salmon, tximport, DESeq2, goseq, mouse annotations
+- trim_galore, salmon, tximport, DESeq2, goseq, gprofiler2, mouse annotations
 
 ```
 docker build -t transcript_quant_go_mouse .
