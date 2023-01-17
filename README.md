@@ -19,3 +19,7 @@ docker run --rm -it -p 8888:8888 -v `pwd`:/work transcript_quant_go_mouse
 - Jupyter notebook environment with Python kernel
 - trim_galore, star, minimap2, samtools, igv
 
+```
+docker build -t rna_seq_splice_align_view .
+docker run --rm -it -p 8888:8888 -v `pwd`:/work rna_seq_splice_align_view
+```
