@@ -23,3 +23,14 @@ docker run --rm -it -p 8888:8888 -v `pwd`:/work transcript_quant_go_mouse
 docker build -t rna_seq_splice_align_view .
 docker run --rm -it -p 8888:8888 -v `pwd`:/work rna_seq_splice_align_view
 ```
+
+### braker2
+- Jupyter notebook environment with Python kernel
+- trim_galore, hisat2, samtools, braker2
+- add licence file ```gm_key_64.gz``` into directory with ```Dockerfile```
+- change ```Dockerfile``` Genemark download link (###Genemark Link###) as required 
+
+```
+docker build -t braker2 .
+docker run --rm -it -p 8888:8888 -v `pwd`:/work braker2
+```
