@@ -27,8 +27,8 @@ docker run --rm -it -p 8888:8888 -v `pwd`:/work rna_seq_splice_align_view
 ### braker2
 - Jupyter notebook environment with Python kernel
 - trim_galore, hisat2, samtools, braker2
-- add licence file ```gm_key_64.gz``` into directory with ```Dockerfile```
-- change ```Dockerfile``` Genemark download link (###Genemark Link###) as required 
+- add licence file ```gm_key_64.gz``` into directory with ```Dockerfile``` before building
+- change ```Dockerfile``` Genemark download link (###Genemark Link###) before building
 
 ```
 docker build -t braker2 .
