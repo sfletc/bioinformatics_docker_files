@@ -67,7 +67,7 @@ RUN R -e 'BiocManager::install("tximport", update=TRUE, ask=FALSE)'
 
 RUN R -e 'install.packages(c("repr", "IRdisplay", "IRkernel"), type = "source", dependencies=TRUE, repos="http://cran.rstudio.com/")'
 RUN R -e 'IRkernel::installspec()'
-RUN R -e 'install.packages(c("gprofiler2"), type = "source", dependencies=TRUE, repos="http://cran.rstudio.com/")'
+RUN R -e 'install.packages(c("gprofiler2", "readr"), type = "source", dependencies=TRUE, repos="http://cran.rstudio.com/")'
 WORKDIR /work
 
 CMD jupyter notebook --port=8888 --no-browser --ip='0.0.0.0' --allow-root
